@@ -14,7 +14,7 @@ public class SSSPDijkstra
     /// <summary>
     /// Dijkstra算法求单源最短路径
     /// </summary>
-    /// <param name="graph"></param>权重（负）图邻接哈希表
+    /// <param name="graph"></param>权重（非负）图邻接哈希表
     /// <param name="startVertex"></param>起始顶点,计算去往其它顶点的最短路径
     public SSSPDijkstra(AdjacencyHash graph, int startVertex)
     {
@@ -110,27 +110,27 @@ public class SSSPDijkstra
         {
             minDistance[i] = double.PositiveInfinity;
         }
-        //起始顶点距离为0
+        //起始顶点权重为0
         minDistance[startVertex] = 0;
         //将起始顶点加入优先队列
         pq.Enqueue(startVertex, 0);
         while (pq.Count > 0)
         {
-            //取出当前距离起始顶点最近的顶点
+            //取出当前权重起始顶点最近的顶点
             pq.TryDequeue(out int curVertex, out double curDist);
-            //如果当前距离大于已知最短路径距离，跳过
+            //如果当前距离大于已知最短路径权重，跳过
             if (curDist > minDistance[curVertex])
             {
                 continue;
             }
-            //更新与该顶点相邻的顶点的距离
+            //更新与该顶点相邻的顶点的权重
             var edges = graph.GetAllEdges(curVertex);
             foreach (var edge in edges)
             {
                 //获取相邻顶点和边权重
                 int neighbor = (int)edge[0];
                 double weight = edge[1];
-                //如果通过curVertex到达neighbor的距离更短，更新距离并加入优先队列
+                //如果通过curVertex到达neighbor的权重更短，更新权重并加入优先队列
                 if (minDistance[curVertex] + weight < minDistance[neighbor])
                 {
                     minDistance[neighbor] = minDistance[curVertex] + weight;

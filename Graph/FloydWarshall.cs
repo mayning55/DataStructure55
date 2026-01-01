@@ -16,6 +16,8 @@ public class FloydWarshall
     /// Floyd-Warshall算法计算所有顶点对之间的最短路径
     /// </summary>
     /// <param name="graph"></param>权重图邻接哈希表
+    /// <param name="od"></param>出度与入度默认-1时，打印顶点间矩阵
+    /// <param name="id"></param>
     public FloydWarshall(AdjacencyHash graph, int od = -1, int id = -1)
     {
         this.graph = graph;
@@ -24,9 +26,9 @@ public class FloydWarshall
         //初始化距离矩阵
         minDistance = new double[vertices, vertices];
         FloydWarshallAllPairs();
-        //俩顶点间最短路径
         if (od != -1 && id != -1)
         {
+            //俩顶点间最短路径
             if (minDistance[od, id] == double.PositiveInfinity)
             {
                 System.Console.WriteLine($"顶点{od}到顶点{id}间不可达");

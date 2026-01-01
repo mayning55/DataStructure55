@@ -52,7 +52,7 @@ class Program
         /*
         邻接哈希图
         */
-        AdjacencyHash ahg = new AdjacencyHash(8);
+        AdjacencyHash ahg = new AdjacencyHash(8,true);
         ahg.AddEdge(0, 1, 5.0);
         ahg.AddEdge(0, 2, 20.0);
         ahg.AddEdge(0, 4, 18.0);
@@ -131,7 +131,15 @@ class Program
         /*
         多源最短路径 FloydWarshall
         */
-        FloydWarshall fw = new FloydWarshall(ahg, 4, 1);
+        //FloydWarshall fw = new FloydWarshall(ahg, 1, 2);
+        /*
+        多源最短路径 Johnson
+        */
+        //Johnson js = new Johnson(ahg, 1, 2);
+        /*
+        次短路径
+        */
+        SecondShortestPath ssp = new SecondShortestPath(ahg, 0, 3);
 
     }
 }
