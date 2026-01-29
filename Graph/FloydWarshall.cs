@@ -84,7 +84,7 @@ public class FloydWarshall
                 }
             }
         }
-        //动态规划，更新距离矩阵，枚举所有中间顶点k
+        //三重循环，更新距离矩阵，枚举所有中间顶点k
         for (int k = 0; k < vertices; k++)
         {
             for (int i = 0; i < vertices; i++)
