@@ -11,8 +11,8 @@ public class SingleLinearDP
     /// 子序列：顺序不变，但可以不连续。
     /// 子数组：顺序不变且连续。
     /// </summary>
-    /// <param name="nums"></param>整数数组
-    /// <returns></returns>找到其中最长严格递增子序列的长度。
+    /// <param name="nums">整数数组</param>
+    /// <returns>找到其中最长严格递增子序列的长度。</returns>
     public int LengthOfLIS(int[] nums)
     {
         int m = nums.Length;

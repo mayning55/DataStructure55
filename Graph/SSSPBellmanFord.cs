@@ -15,8 +15,8 @@ public class SSSPBellmanFord
     /// <summary>
     /// BellmanFord负权重边的单源最短路径算法
     /// </summary>
-    /// <param name="graph"></param>权重（负）图邻接哈希表
-    /// <param name="startVertex"></param>起始顶点,计算去往其它顶点的最短路径
+    /// <param name="graph">权重（负）图邻接哈希表</param>
+    /// <param name="startVertex">起始顶点,计算去往其它顶点的最短路径</param>
     public SSSPBellmanFord(AdjacencyHash graph, int startVertex)
     {
         this.graph = graph;

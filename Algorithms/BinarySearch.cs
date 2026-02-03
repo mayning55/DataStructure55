@@ -7,9 +7,9 @@ public class BinarySearch
     /// <summary>
     /// 二分查找
     /// </summary>
-    /// <param name="nums"></param>有序数组
-    /// <param name="target"></param>目标
-    /// <returns></returns>目标值在数组中的位置
+    /// <param name="nums">有序数组</param>
+    /// <param name="target">目标</param>
+    /// <returns>目标值在数组中的位置</returns>
     public int Search(int[] nums, int target)
     {
         //查找区间，左右闭合。

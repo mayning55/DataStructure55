@@ -17,9 +17,9 @@ public class SecondShortestPath
     /// <summary>
     /// 次短路径
     /// </summary>
-    /// <param name="graph"></param>权重（非负）图邻接哈希表
-    /// <param name="s"></param>起始顶点  
-    /// <param name="e"></param>目标顶点
+    /// <param name="graph">权重（非负）图邻接哈希表</param>
+    /// <param name="s">起始顶点  </param>
+    /// <param name="e">目标顶点</param>
     public SecondShortestPath(AdjacencyHash graph, int s, int e)
     {
         this.graph = graph;

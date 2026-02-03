@@ -14,8 +14,8 @@ public class SSSPDijkstra
     /// <summary>
     /// Dijkstra算法求单源最短路径
     /// </summary>
-    /// <param name="graph"></param>权重（非负）图邻接哈希表
-    /// <param name="startVertex"></param>起始顶点,计算去往其它顶点的最短路径
+    /// <param name="graph">权重（非负）图邻接哈希表</param>
+    /// <param name="startVertex">起始顶点,计算去往其它顶点的最短路径</param>
     public SSSPDijkstra(AdjacencyHash graph, int startVertex)
     {
         this.graph = graph;

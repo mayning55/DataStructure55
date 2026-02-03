@@ -32,9 +32,9 @@ public class AdjMatrixGraph
     /// <summary>
     /// 两点之间添加一条边
     /// </summary>
-    /// <param name="od"></param>有向图顶点的出度（Out Degree），无向图不指定，下同。
-    /// <param name="id"></param>顶点的入度
-    /// <param name="weight"></param>权重默认
+    /// <param name="od">有向图顶点的出度（Out Degree），无向图不指定，下同。</param>
+    /// <param name="id">顶点的入度</param>
+    /// <param name="weight">权重默认</param>
     public void AddEdge(int od, int id, double weight)
     {
         //顶点是否超出边界
@@ -74,8 +74,8 @@ public class AdjMatrixGraph
     /// <summary>
     /// 是否存在边
     /// </summary>
-    /// <param name="od"></param>有向图顶点的出度，无向图不指定，下同。
-    /// <param name="id"></param>顶点的入度
+    /// <param name="od">有向图顶点的出度，无向图不指定，下同。</param>
+    /// <param name="id">顶点的入度</param>
     /// <returns></returns>
     public bool HasEdge(int od, int id)
     {

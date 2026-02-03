@@ -70,7 +70,7 @@ public class ListNodeImplementer<T> : IListNode<T>
     /// <summary>
     /// 创建链表
     /// </summary>
-    /// <param name="item"></param>传入的对象转换新成节点加入到链表的末部
+    /// <param name="item">传入的对象转换新成节点加入到链表的末部</param>
     public void CreateListNode(T item)
     {
         //传入的对象转换新成节点
@@ -134,8 +134,8 @@ public class ListNodeImplementer<T> : IListNode<T>
     /// <summary>
     /// 删除节点
     /// </summary>
-    /// <param name="index"></param>要删除节点的下标位置
-    /// <returns></returns>删除的节点值
+    /// <param name="index">要删除节点的下标位置</param>
+    /// <returns>删除的节点值</returns>
     /// <exception cref="ArgumentException"></exception>
     public T DeleteNodeByIndex(int index)
     {
@@ -213,8 +213,8 @@ public class ListNodeImplementer<T> : IListNode<T>
     /// <summary>
     /// 更新节点
     /// </summary>
-    /// <param name="item"></param>传入的新节点对象
-    /// <param name="index"></param>修改的节点下标位置
+    /// <param name="item">传入的新节点对象</param>
+    /// <param name="index">修改的节点下标位置</param>
     public void UpdateNode(T item, int index)
     {
         ListNode<T> cur = node;
@@ -233,9 +233,9 @@ public class ListNodeImplementer<T> : IListNode<T>
     /// <summary>
     /// 根据节点下标位置返回节点值
     /// </summary>
-    /// <param name="index"></param>节点下标位置
+    /// <param name="index">节点下标位置</param>
     /// <returns></returns>节点值
-    /// <exception cref="ArgumentException"></exception>下标超范围
+    /// <exception cref="ArgumentException">下标超范围</exception>
     public T GetNodeValueByIndex(int index)
     {
         T val = default(T);
@@ -272,8 +272,8 @@ public class ListNodeImplementer<T> : IListNode<T>
     /// <summary>
     /// 根据传入对象查找所在链表的下标位置
     /// </summary>
-    /// <param name="item"></param>传入对象
-    /// <returns></returns>如果返回-1，表示未找到。
+    /// <param name="item">传入对象</param>
+    /// <returns>如果返回-1，表示未找到。</returns>
     public int GetNodeIndex(T item)
     {
         ListNode<T> cur = node;

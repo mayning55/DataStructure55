@@ -33,9 +33,9 @@ public class AdjacencyHash
     /// <summary>
     ///  添加边
     /// </summary>
-    /// <param name="od"></param>出度
-    /// <param name="id"></param>入度
-    /// <param name="weight"></param>权重，默认1.0
+    /// <param name="od">出度</param>
+    /// <param name="id">入度</param>
+    /// <param name="weight">权重，默认1.0</param>
     public void AddEdge(int od, int id, double weight = 1.0)
     {
         // 顶点是否超出边界

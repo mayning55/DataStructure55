@@ -11,8 +11,8 @@ public class IntervalDP
     /// 最长回文子序列：扩展型区间DP
     /// (编辑距离，二维线性DP MiniDistanceDP)
     /// </summary>
-    /// <param name="s"></param>子序列定义为：不改变剩余字符顺序的情况下，删除某些字符或者不删除任何字符形成的一个序列。
-    /// <returns></returns>返回其中最长的回文子序列长度。
+    /// <param name="s">子序列定义为：不改变剩余字符顺序的情况下，删除某些字符或者不删除任何字符形成的一个序列。</param>
+    /// <returns>返回其中最长的回文子序列长度。</returns>
     public int LongestPalindromeSubseq(string s)
     {
         int m = s.Length;
@@ -41,8 +41,8 @@ public class IntervalDP
     /// <summary>
     /// 戳气球:合并型区间DP
     /// </summary>
-    /// <param name="nums"></param>气球上的数字
-    /// <returns></returns>返回与相邻的两个气球相乘的值
+    /// <param name="nums">气球上的数字</param>
+    /// <returns>返回与相邻的两个气球相乘的值</returns>
     public int MaxCoins(int[] nums)
     {
         int m = nums.Length;

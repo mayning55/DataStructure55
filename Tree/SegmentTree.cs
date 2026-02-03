@@ -33,9 +33,9 @@ public class SegmentTree
     /// <summary>
     /// 创建线段对
     /// </summary>
-    /// <param name="node"></param>当前节点在 _tree 数组中的索引
-    /// <param name="start"></param>当前节点管理的区间左端点
-    /// <param name="end"></param>当前节点管理的区间右端点
+    /// <param name="node">当前节点在 _tree 数组中的索引</param>
+    /// <param name="start">当前节点管理的区间左端点</param>
+    /// <param name="end">当前节点管理的区间右端点</param>
     public void BuildSegmentTree(int node, int start, int end)
     {
         //叶子节点，直接赋值为原数组对应元素
@@ -86,8 +86,8 @@ public class SegmentTree
     /// <summary>
     /// 区间查询
     /// </summary>
-    /// <param name="left"></param>左边界
-    /// <param name="right"></param>右边界
+    /// <param name="left">左边界</param>
+    /// <param name="right">右边界</param>
     /// <returns></returns>
     /// <exception cref="ArgumentException"></exception>
     public int Query(int left, int right)
@@ -103,11 +103,11 @@ public class SegmentTree
     /// <summary>
     /// 递归查找区间
     /// </summary>
-    /// <param name="node"></param>当前节点索引
-    /// <param name="start"></param>当前节点区间左边界
-    /// <param name="end"></param>当前节点区间右边界
-    /// <param name="left"></param>查询区间左边界
-    /// <param name="right"></param>查询区间右边界
+    /// <param name="node">当前节点索引</param>
+    /// <param name="start">当前节点区间左边界</param>
+    /// <param name="end">当前节点区间右边界</param>
+    /// <param name="left">查询区间左边界</param>
+    /// <param name="right">查询区间右边界</param>
     /// <returns></returns>
     public int QueryRange(int node, int start, int end, int left, int right)
     {
@@ -137,8 +137,8 @@ public class SegmentTree
     /// <summary>
     /// 单点更新节点
     /// </summary>
-    /// <param name="index"></param>待更新的数组下标
-    /// <param name="val"></param>待更新的值。
+    /// <param name="index">待更新的数组下标</param>
+    /// <param name="val">待更新的值。</param>
     /// <exception cref="IndexOutOfRangeException"></exception>
     public void Update(int index, int val)
     {
@@ -153,11 +153,11 @@ public class SegmentTree
     /// <summary>
     /// 递归更新
     /// </summary>
-    /// <param name="node"></param>当前节点索引
-    /// <param name="start"></param>当前节点区间左边界
-    /// <param name="end"></param>当前节点区间右边界
-    /// <param name="index"></param>待更新的元素索引
-    /// <param name="val"></param>待更新的值
+    /// <param name="node">当前节点索引</param>
+    /// <param name="start">当前节点区间左边界</param>
+    /// <param name="end">当前节点区间右边界</param>
+    /// <param name="index">待更新的元素索引</param>
+    /// <param name="val">待更新的值</param>
     public void UpdateSingle(int node, int start, int end, int index, int val)
     {
         //找到要更新的叶节点

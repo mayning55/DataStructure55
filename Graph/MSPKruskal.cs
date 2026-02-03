@@ -9,7 +9,7 @@ public class MSPKruskal
     /// <summary>
     /// Kruskal算法最小生成树
     /// </summary>
-    /// <param name="graph"></param>无向图邻接哈希表
+    /// <param name="graph">无向图邻接哈希表</param>
     public MSPKruskal(AdjacencyHash graph)
     {
         this.graph = graph;

@@ -10,9 +10,9 @@ public class HybridPacket
     /// <summary>
     /// 混合背包
     /// </summary>
-    /// <param name="weight"></param>种物品的重量
-    /// <param name="value"></param>每种物品的价值
-    /// <param name="count"></param>每种物品的数量上限：
+    /// <param name="weight">种物品的重量</param>
+    /// <param name="value">每种物品的价值</param>
+    /// <param name="count">每种物品的数量上限：</param>
     /// 当数量等于1时，表示只有1件；
     /// 当数量等于0时，表示无限件；
     /// 当数量大于1时，表示该值的件数。

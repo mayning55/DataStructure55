@@ -7,8 +7,8 @@ public class Enumeration
     /// <summary>
     /// 枚举
     /// </summary>
-    /// <param name="nums"></param>数组
-    /// <returns></returns>数组里两个数之和等于10的组数。
+    /// <param name="nums">数组</param>
+    /// <returns>数组里两个数之和等于10的组数。</returns>
     public int TwoSum(int[] nums)
     {
         int m = nums.Length;

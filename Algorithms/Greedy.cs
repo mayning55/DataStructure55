@@ -7,9 +7,9 @@ public class Greedy
     /// <summary>
     /// 给小朋友1个饼干
     /// </summary>
-    /// <param name="g"></param>想要多在的饼干
-    /// <param name="s"></param>饼干的大小
-    /// <returns></returns>饼干的大小是否满足小朋友的期望？
+    /// <param name="g">想要多在的饼干</param>
+    /// <param name="s">饼干的大小</param>
+    /// <returns>饼干的大小是否满足小朋友的期望？</returns>
     public int FindContentChildren(int[] g, int[] s)
     {
         int m = g.Length;

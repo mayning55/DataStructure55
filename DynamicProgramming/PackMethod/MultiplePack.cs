@@ -9,11 +9,11 @@ public class MultiplePacket
     /// <summary>
     /// 多重背包，二维动态规划
     /// </summary>
-    /// <param name="weight"></param>每种物品的重量
-    /// <param name="value"></param>每种物品的价值
-    /// <param name="count"></param>每种物品的数量上限
-    /// <param name="W"></param>背包最大承重
-    /// <returns></returns>返回最大可获得价值
+    /// <param name="weight">每种物品的重量</param>
+    /// <param name="value">每种物品的价值</param>
+    /// <param name="count">每种物品的数量上限</param>
+    /// <param name="W">背包最大承重</param>
+    /// <returns>返回最大可获得价值</returns>
     public int MultiplePacketMethod(int[] weight, int[] value, int[] count, int W)
     {
         int m = weight.Length;

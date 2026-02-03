@@ -8,8 +8,8 @@ public class BuildTree
     /// <summary>
     /// 根据前序遍历和中序遍历还原二叉树
     /// </summary>
-    /// <param name="preorder"></param>前序遍历
-    /// <param name="inorder"></param>中序遍历
+    /// <param name="preorder">前序遍历</param>
+    /// <param name="inorder">中序遍历</param>
     /// <returns></returns>
     public TreeNode WithPreIno(List<int> preorder, List<int> inorder)
     {
@@ -42,8 +42,8 @@ public class BuildTree
     /// <summary>
     /// 根据中序遍历和后序遍历还原二叉树
     /// </summary>
-    /// <param name="inorder"></param>中序遍历
-    /// <param name="postorder"></param>后序遍历
+    /// <param name="inorder">中序遍历</param>
+    /// <param name="postorder">后序遍历</param>
     /// <returns></returns>
     public TreeNode WithInPost(List<int> inorder, List<int> postorder)
     {
@@ -76,8 +76,8 @@ public class BuildTree
     /// <summary>
     /// 根据中序遍历和层序遍历还原二叉树
     /// </summary>
-    /// <param name="inorder"></param>中序遍历
-    /// <param name="level"></param>层序遍历
+    /// <param name="inorder">中序遍历</param>
+    /// <param name="level">层序遍历</param>
     /// <returns></returns>
 
     public TreeNode WithInLevel(List<int> inorder, List<int> level)
@@ -128,8 +128,8 @@ public class BuildTree
     /// <summary>
     /// 根据前序和后序还原二叉树
     /// </summary>
-    /// <param name="preorder"></param>前序
-    /// <param name="postorder"></param>后序
+    /// <param name="preorder">前序</param>
+    /// <param name="postorder">后序</param>
     /// <returns></returns>
     public TreeNode WithPrePost(List<int> preorder, List<int> postorder)
     {

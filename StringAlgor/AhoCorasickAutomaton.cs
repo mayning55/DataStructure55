@@ -12,7 +12,7 @@ public class AhoCorasickAutomaton<TKey, TValue> where TValue : IEnumerable<TKey>
     /// <summary>
     /// 构建字典树，将模型串元素插入字典树中。
     /// </summary>
-    /// <param name="pattern"></param>模型串
+    /// <param name="pattern">模型串</param>
 
     public void InsertNode(TValue pattern)
     {
@@ -124,8 +124,8 @@ public class AhoCorasickAutomaton<TKey, TValue> where TValue : IEnumerable<TKey>
 /// <summary>
 /// 泛型字典树节点
 /// </summary>
-/// <typeparam name="TKey"></typeparam>构成模式串的基本单元类型
-/// <typeparam name="TValue"></typeparam>完整的模式串类型 
+/// <typeparam name="TKey">构成模式串的基本单元类型</typeparam>
+/// <typeparam name="TValue">完整的模式串类型 </typeparam>
 public class TrieNode<TKey, TValue>
 {
     //子节点,

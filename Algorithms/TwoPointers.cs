@@ -10,9 +10,9 @@ public class TwoPointers
     /// <summary>
     /// 对撞（相向）双指针,两数之和
     /// </summary>
-    /// <param name="nums"></param>递增的正整数数组
-    /// <param name="target"></param>目标值
-    /// <returns></returns>返回相加之和等于目标数 target 的两个数。如果设这两个数分别是 numbers[index1] 和 numbers[index2] ，则 1 <= index1 < index2 <= numbers.length 。
+    /// <param name="nums">递增的正整数数组</param>
+    /// <param name="target">目标值</param>
+    /// <returns>返回相加之和等于目标数 target 的两个数。如果设这两个数分别是 numbers[index1] 和 numbers[index2] ，则 1 <= index1 < index2 <= numbers.length 。</returns>
     public int[] OppositeDirection(int[] nums, int target)
     {
         //左指针指向第一个元素，右指针指向最末元素
@@ -43,7 +43,7 @@ public class TwoPointers
     /// 快慢（同向）指针
     /// 去除重复元素后的数组长度
     /// </summary>
-    /// <param name="nums"></param>递增的正整数数组
+    /// <param name="nums">递增的正整数数组</param>
     /// <returns></returns>
     public int SameDirection(int[] nums)
     {

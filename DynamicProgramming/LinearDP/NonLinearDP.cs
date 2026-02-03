@@ -7,8 +7,8 @@ public class NonLinearDP
     /// <summary>
     /// 整数拆分
     /// </summary>
-    /// <param name="n"></param>正整数 n
-    /// <returns></returns>其拆分为 k(k≥2) 个正整数的最大乘积。
+    /// <param name="n">正整数 n</param>
+    /// <returns>其拆分为 k(k≥2) 个正整数的最大乘积。</returns>
     public int IntegerBreak(int n)
     {
         int[] dp = new int[n + 1];

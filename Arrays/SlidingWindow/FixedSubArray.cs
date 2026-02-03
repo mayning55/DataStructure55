@@ -6,10 +6,10 @@ public class FixedSubArray
     /// 滑动窗口（固定长度窗口）
     /// 1343. 大小为 K 且平均值大于等于阈值的子数组数目
     /// </summary>
-    /// <param name="arr"></param>整数数组
-    /// <param name="k"></param>整数
-    /// <param name="threshold"></param>整数
-    /// <returns></returns>返回长度为 k 且平均值大于等于 threshold 的子数组数目
+    /// <param name="arr">整数数组</param>
+    /// <param name="k">整数</param>
+    /// <param name="threshold">整数</param>
+    /// <returns>返回长度为 k 且平均值大于等于 threshold 的子数组数目</returns>
 
     public static int FixedSubArrayWindow(int[] arr, int k, int threshold)
     {

@@ -9,10 +9,10 @@ public class CompletePacket
     /// <summary>
     /// 完全背包问题，二维动态
     /// </summary>
-    /// <param name="weight"></param>每种物品的重量
-    /// <param name="value"></param>每种物品的价值
-    /// <param name="W"></param>背包最大承重
-    /// <returns></returns>返回最大可获得价值
+    /// <param name="weight">每种物品的重量</param>
+    /// <param name="value">每种物品的价值</param>
+    /// <param name="W">背包最大承重</param>
+    /// <returns>返回最大可获得价值</returns>
     public int CompletePacketMethod(int[] weight, int[] value, int W)
     {
         int m = weight.Length;

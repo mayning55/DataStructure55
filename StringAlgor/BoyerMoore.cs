@@ -68,7 +68,7 @@ public class BoyerMoore
     /// 即最大的k使得p[i-k+1:i+1]==p[m-k:m]。
     /// </summary>
     /// <param name="b"></param>
-    /// <returns></returns>suffix[i] 表示以 i 结尾的子字符串（p[0:i+1]）与模式串后缀的最大匹配长度。
+    /// <returns>suffix[i] 表示以 i 结尾的子字符串（p[0:i+1]）与模式串后缀的最大匹配长度。</returns>
 
     public int[] GetSuffixArray(string b)
     {
@@ -95,7 +95,7 @@ public class BoyerMoore
     /// 生成好后缀规则表gs_list
     /// </summary>
     /// <param name="b"></param>
-    /// <returns></returns>gs_list[j] 表示在 j 处遇到坏字符时可向右移动的距离。
+    /// <returns>gs_list[j] 表示在 j 处遇到坏字符时可向右移动的距离。</returns>
     public int[] GenerateGoodSuffixArray(string b)
     {
         int m = b.Length;

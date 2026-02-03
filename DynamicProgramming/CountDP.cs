@@ -9,7 +9,7 @@ public class CountDP
     /// <summary>
     /// 不同路径
     /// </summary>
-    /// <param name="m"></param>m x n
+    /// <param name="m">m x n</param>
     /// <param name="n"></param>
     /// <returns></returns>
     public int UniquePaths(int m, int n)
@@ -38,8 +38,8 @@ public class CountDP
     /// <summary>
     /// 整数拆分
     /// </summary>
-    /// <param name="n"></param>将其拆分为 k(k≥2)k(k≥2) 个正整数的和
-    /// <returns></returns>返回这拆分的整数最大乘积
+    /// <param name="n">将其拆分为 k(k≥2)k(k≥2) 个正整数的和</param>
+    /// <returns>返回这拆分的整数最大乘积</returns>
     public int IntegerBreak(int n)
     {
         int[] dp = new int[n + 1];

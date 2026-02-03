@@ -33,8 +33,8 @@ public class SearchVal
     /// <summary>
     /// 二叉搜索树插入值
     /// </summary>
-    /// <param name="node"></param>二叉搜索树的根节点
-    /// <param name="val"></param>待插入的节点值
+    /// <param name="node">二叉搜索树的根节点</param>
+    /// <param name="val">待插入的节点值</param>
     /// <returns></returns>
 
     public TreeNode InserBST(TreeNode node, int val)
@@ -60,7 +60,7 @@ public class SearchVal
     /// <summary>
     /// 二叉搜索树的创建
     /// </summary>
-    /// <param name="nums"></param>待创建的数组元素
+    /// <param name="nums">待创建的数组元素</param>
     /// <returns></returns>
 
     public TreeNode BuildBST(int[] nums)
@@ -77,8 +77,8 @@ public class SearchVal
     /// <summary>
     /// 二叉搜索树删除节点
     /// </summary>
-    /// <param name="node"></param>二叉搜索树的根节点
-    /// <param name="val"></param>待删除的节点值
+    /// <param name="node">二叉搜索树的根节点</param>
+    /// <param name="val">待删除的节点值</param>
     /// <returns></returns>
 
     public TreeNode DelNodeBST(TreeNode node, int val)

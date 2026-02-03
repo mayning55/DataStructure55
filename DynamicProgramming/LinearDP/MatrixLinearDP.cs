@@ -10,8 +10,8 @@ public class MatrixLinearDP
     /// <summary>
     /// 最大正方形
     /// </summary>
-    /// <param name="grid"></param>一个由 0 和 1 组成的二维矩阵
-    /// <returns></returns>包含 '1' 的最大正方形的面积
+    /// <param name="grid">一个由 0 和 1 组成的二维矩阵</param>
+    /// <returns>包含 '1' 的最大正方形的面积</returns>
     public int MaximalSquare(int[][] matrix)
     {
 
@@ -57,8 +57,8 @@ public class MatrixLinearDP
     /// <summary>
     /// 为 1 的正方形子矩阵数目
     /// </summary>
-    /// <param name="matrix"></param>由 '0' 和 '1' 组成的二维矩阵
-    /// <returns></returns>统计并返回其中完全由 1 组成的 正方形 子矩阵的个数
+    /// <param name="matrix">由 '0' 和 '1' 组成的二维矩阵</param>
+    /// <returns>统计并返回其中完全由 1 组成的 正方形 子矩阵的个数</returns>
     public int CountSquares(int[][] matrix)
     {
         int result = 0;

@@ -10,12 +10,12 @@ public class TwoDimensionalPacket
     /// <summary>
     /// 二维费用背包，数组滚动优化
     /// </summary>
-    /// <param name="weight"></param>每种物品的重量
-    /// <param name="volume"></param>每种物品的体积
-    /// <param name="value"></param>每种物品的价值
-    /// <param name="W"></param>背包最大承重
-    /// <param name="V"></param>背包最大体积
-    /// <returns></returns>返回最大可获得价值
+    /// <param name="weight">每种物品的重量</param>
+    /// <param name="volume">每种物品的体积</param>
+    /// <param name="value">每种物品的价值</param>
+    /// <param name="W">背包最大承重</param>
+    /// <param name="V">背包最大体积</param>
+    /// <returns>返回最大可获得价值</returns>
     public int TwoDimensionalPacketArray(int[] weight, int[] volume, int[] value, int W, int V)
     {
         if (weight == null || volume == null || value == null || weight.Length == 0 || W <= 0 || V <= 0)

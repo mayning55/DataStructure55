@@ -9,10 +9,10 @@ public class ZeroOnePacket
     /// <summary>
     /// 0-1背包问题，二维动态规划
     /// </summary>
-    /// <param name="weight"></param>每种物品的重量
-    /// <param name="value"></param>每种物品的价值
-    /// <param name="W"></param>背包最大承重
-    /// <returns></returns>返回最大可获得价值
+    /// <param name="weight">每种物品的重量</param>
+    /// <param name="value">每种物品的价值</param>
+    /// <param name="W">背包最大承重</param>
+    /// <returns>返回最大可获得价值</returns>
     public int ZeroOnePacketMethod(int[] weight, int[] value, int W)
     {
         int m = weight.Length;
@@ -72,8 +72,8 @@ public class ZeroOnePacket
     /// <summary>
     /// 分割子数组和相等，0-1背包问题，一维动态规划，滚动数组优化
     /// </summary>
-    /// <param name="nums"></param>正整数的非空数组
-    /// <returns></returns>判断是否可以将这个数组分成两个子集，使得两个子集的元素和相等。
+    /// <param name="nums">正整数的非空数组</param>
+    /// <returns>判断是否可以将这个数组分成两个子集，使得两个子集的元素和相等。</returns>
 
     public bool CanPartition(int[] nums)
     {

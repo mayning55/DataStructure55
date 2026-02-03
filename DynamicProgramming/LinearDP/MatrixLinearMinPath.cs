@@ -29,8 +29,8 @@ public class MatrixLinearMinPath
     /// <summary>
     /// 最小路径和
     /// </summary>
-    /// <param name="grid"></param>一个包含非负整数的m×n大小的网格
-    /// <returns></returns>每次只能向下或者向右移动一步。找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
+    /// <param name="grid">一个包含非负整数的m×n大小的网格</param>
+    /// <returns>每次只能向下或者向右移动一步。找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。</returns>
     private void MatrixPathSum()
     {
         //初始化矩阵

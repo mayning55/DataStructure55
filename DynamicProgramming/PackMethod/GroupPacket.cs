@@ -10,10 +10,10 @@ public class GroupPacket
     /// <summary>
     /// 组合背包，二维动态规划
     /// </summary>
-    /// <param name="group_count"></param>物品每个分组里的物品数量
-    /// <param name="weight"></param>物品分组里每个物品对应的重量
-    /// <param name="value"></param>物品分组里第个物品对应的价值
-    /// <param name="W"></param>背包最大重量
+    /// <param name="group_count">物品每个分组里的物品数量</param>
+    /// <param name="weight">物品分组里每个物品对应的重量</param>
+    /// <param name="value">物品分组里第个物品对应的价值</param>
+    /// <param name="W">背包最大重量</param>
     /// <returns></returns>
     public int GroupPacketMethod(int[] groupCount, int[][] weight, int[][] value, int W)
     {

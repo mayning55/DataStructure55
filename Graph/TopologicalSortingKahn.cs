@@ -10,7 +10,7 @@ public class TopologicalSortingKahn
     /// <summary>
     /// 拓扑排序Kahn算法
     /// </summary>
-    /// <param name="graph"></param>有向(无环)的哈希表邻接图
+    /// <param name="graph">有向(无环)的哈希表邻接图</param>
     public void SortingKahn(AdjacencyHash graph)
     {
         int vertices = graph.vertices;

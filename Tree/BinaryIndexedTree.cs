@@ -30,8 +30,8 @@ public class BinaryIndexedTree
     /// <summary>
     /// 单点更新
     /// </summary>
-    /// <param name="index"></param>数组元素下标（从1开始）
-    /// <param name="val"></param>元素增加的值（可以为负数）
+    /// <param name="index">数组元素下标（从1开始）</param>
+    /// <param name="val">元素增加的值（可以为负数）</param>
     public void Update(int index, int val)
     {
         for (int i = index; i <= m; i += LowBit(i))
@@ -47,7 +47,7 @@ public class BinaryIndexedTree
     /// <summary>
     /// 统计前辍和
     /// </summary>
-    /// <param name="index"></param>从第一个元素到下标的元素
+    /// <param name="index">从第一个元素到下标的元素</param>
     /// <returns></returns>
     public int Query(int index)
     {

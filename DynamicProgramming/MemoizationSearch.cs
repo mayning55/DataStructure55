@@ -43,9 +43,9 @@ public class MemoizationSearch
     /// <summary>
     /// 目标和,
     /// </summary>
-    /// <param name="nums"></param>正整数数组
-    /// <param name="target"></param>整数
-    /// <returns></returns>数组元素间添加+,-，使运算结果等于target的数目数量。
+    /// <param name="nums">正整数数组</param>
+    /// <param name="target">整数</param>
+    /// <returns>数组元素间添加+,-，使运算结果等于target的数目数量。</returns>
     public int FindTargetSumWays(int[] nums, int target)
     {
         this.nums = nums;

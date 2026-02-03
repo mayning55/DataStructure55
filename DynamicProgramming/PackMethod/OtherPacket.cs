@@ -10,10 +10,10 @@ public class OtherPacket
     /// <summary>
     /// 背包恰好装满
     /// </summary>
-    /// <param name="weight"></param>每种物品的重量
-    /// <param name="value"></param>每种物品的价值
-    /// <param name="W"></param>背包最大承重
-    /// <returns></returns>如果背包在刚好装满的情况下返回最大可获得价值，不能装满-1
+    /// <param name="weight">每种物品的重量</param>
+    /// <param name="value">每种物品的价值</param>
+    /// <param name="W">背包最大承重</param>
+    /// <returns>如果背包在刚好装满的情况下返回最大可获得价值，不能装满-1</returns>
     public int FullPacketMethod(int[] weight, int[] value, int W)
     {
         if (weight == null || value == null || weight.Length == 0 || W <= 0)
@@ -54,10 +54,10 @@ public class OtherPacket
     /// <summary>
     /// 背包问题解决方案总数目
     /// </summary>
-    /// <param name="weight"></param>每种物品的重量
-    /// <param name="value"></param>每种物品的价值
-    /// <param name="W"></param>背包最大承重
-    /// <returns></returns>当总重量不超过背包载重上限的情况下，一共有多少种方案？
+    /// <param name="weight">每种物品的重量</param>
+    /// <param name="value">每种物品的价值</param>
+    /// <param name="W">背包最大承重</param>
+    /// <returns>当总重量不超过背包载重上限的情况下，一共有多少种方案？</returns>
     public int TotalPacketSolution(int[] weight, int[] value, int W)
     {
         if (weight == null || value == null || weight.Length == 0 || W <= 0)
@@ -90,10 +90,10 @@ public class OtherPacket
     /// <summary>
     /// 最优方案数
     /// </summary>
-    /// <param name="weight"></param>每种物品的重量
-    /// <param name="value"></param>每种物品的价值
-    /// <param name="W"></param>背包最大承重
-    /// <returns></returns>返回最优方案数
+    /// <param name="weight">每种物品的重量</param>
+    /// <param name="value">每种物品的价值</param>
+    /// <param name="W">背包最大承重</param>
+    /// <returns>返回最优方案数</returns>
     public int BestPacketSolution(int[] weight, int[] value, int W)
     {
         if (weight == null || value == null || weight.Length == 0 || W <= 0)
@@ -274,9 +274,9 @@ public class OtherPacket
     /// <param name="dp"></param>
     /// <param name="weight"></param>
     /// <param name="value"></param>
-    /// <param name="i"></param>当前考虑第 i 个物品 (1 ~ m)
-    /// <param name="currentW"></param>当前剩余容量
-    /// <param name="currentPath"></param>当前路径
+    /// <param name="i">当前考虑第 i 个物品 (1 ~ m)</param>
+    /// <param name="currentW">当前剩余容量</param>
+    /// <param name="currentPath">当前路径</param>
     /// <param name="results"></param>
     private void FindAllPaths(int[,] dp, int[] weight, int[] value, int i, int currentW, List<int> currentPath, List<List<int>> results)
     {
@@ -450,10 +450,10 @@ public class OtherPacket
     /// <summary>
     /// 依赖背包
     /// </summary>
-    /// <param name="weight"></param>物品的重量
-    /// <param name="value"></param>物品的价值
-    /// <param name="parents"></param>对应的附属件（父件）
-    /// <param name="W"></param>背包最大重量
+    /// <param name="weight">物品的重量</param>
+    /// <param name="value">物品的价值</param>
+    /// <param name="parents">对应的附属件（父件）</param>
+    /// <param name="W">背包最大重量</param>
     /// <returns></returns>
 
     public int TreePacket(int[] weight, int[] value, int[] parents, int W)
@@ -491,11 +491,11 @@ public class OtherPacket
     /// <summary>
     /// 树形动态规划
     /// </summary>
-    /// <param name="u"></param>当前节点
-    /// <param name="capacity"></param>当前可用的总背包容量
-    /// <param name="tree"></param>树的邻接表
-    /// <param name="volumes"></param>体积数组
-    /// <param name="values"></param>价值数组
+    /// <param name="u">当前节点</param>
+    /// <param name="capacity">当前可用的总背包容量</param>
+    /// <param name="tree">树的邻接表</param>
+    /// <param name="volumes">体积数组</param>
+    /// <param name="values">价值数组</param>
     /// <param name="dp"></param>
     /// <returns></returns>
     static int[] DFS(int u, int capacity, List<int>[] tree, int[] volumes, int[] values, int[][] dp)

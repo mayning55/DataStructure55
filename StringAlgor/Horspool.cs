@@ -46,7 +46,7 @@ public class Horspool
     /// 生成后移位数表.记录子字符串中每个字符最右则的距离
     /// </summary>
     /// <param name="b"></param>
-    /// <returns></returns>返回生成的后移位数表。bc_table[bad_char] 表示遇到坏字符时可以向右移动的距离
+    /// <returns>返回生成的后移位数表。bc_table[bad_char] 表示遇到坏字符时可以向右移动的距离</returns>
     public Dictionary<char, int> GenerateBadCharTable(string b)
     {
         int m = b.Length;

@@ -11,7 +11,7 @@ public class DoubleLinearDP
     /// </summary>
     /// <param name="s1"></param>
     /// <param name="s2"></param>
-    /// <returns></returns>返回两个字符串的最长公共子序列
+    /// <returns>返回两个字符串的最长公共子序列</returns>
     public string LongestCommonSubsequence(string s1, string s2)
     {
         int m = s1.Length;
@@ -67,7 +67,7 @@ public class DoubleLinearDP
     /// </summary>
     /// <param name="nums1"></param>
     /// <param name="nums2"></param>
-    /// <returns></returns>计算两个数组中公共的、长度最长的子数组长度。
+    /// <returns>计算两个数组中公共的、长度最长的子数组长度。</returns>
 
     public int FindLength(int[] nums1, int[] nums2)
     {
@@ -111,7 +111,7 @@ public class DoubleLinearDP
     /// </summary>
     /// <param name="s1"></param>
     /// <param name="s2"></param>
-    /// <returns></returns>操作多少次后s1=s2.
+    /// <returns>操作多少次后s1=s2.</returns>
     public int MinDistance(string s1, string s2)
     {
         int m = s1.Length;

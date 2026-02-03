@@ -8,10 +8,10 @@ public class SlidingWindow
     /// 滑动窗口（固定长度窗口）
     /// 1343. 大小为 K 且平均值大于等于阈值的子数组数目
     /// </summary>
-    /// <param name="nums"></param>整数数组
+    /// <param name="nums">整数数组</param>
     /// <param name="k"></param>
     /// <param name="threshold"></param>
-    /// <returns></returns>返回长度为 k 且平均值大于等于 threshold 的子数组数目
+    /// <returns>返回长度为 k 且平均值大于等于 threshold 的子数组数目</returns>
     public int FixedLengthSlidingWindow(int[] nums, int k, int threshold)
     {
         int m = nums.Length;

@@ -12,8 +12,8 @@ public class MSPPrim
     /// <summary>
     /// Prim算法最小生成树
     /// </summary>
-    /// <param name="graph"></param>无向图邻接哈希表
-    /// <param name="startVertex"></param>开始顶点
+    /// <param name="graph">无向图邻接哈希表</param>
+    /// <param name="startVertex">开始顶点</param>
     public MSPPrim(AdjacencyHash graph, int startVertex)
     {
         this.graph = graph;

@@ -9,7 +9,7 @@ public class Backtracking
     /// <summary>
     /// 子集
     /// </summary>
-    /// <param name="nums"></param>有重复元素的数组
+    /// <param name="nums">有重复元素的数组</param>
     /// <returns></returns>
     public IList<IList<int>> SubsetsWithDup(int[] nums)
     {
@@ -46,7 +46,7 @@ public class Backtracking
     /// <summary>
     /// 全排列
     /// </summary>
-    /// <param name="nums"></param>有重复元素的数组
+    /// <param name="nums">有重复元素的数组</param>
     /// <returns></returns>
     public IList<IList<int>> PermuteUnique(int[] nums)
     {
@@ -123,8 +123,8 @@ public class Backtracking
     /// <summary>
     /// 组合和
     /// </summary>
-    /// <param name="arrays"></param>有重复元素的数组
-    /// <param name="target"></param>排列组合和
+    /// <param name="arrays">有重复元素的数组</param>
+    /// <param name="target">排列组合和/param>
     /// <returns></returns>
     public IList<IList<int>> CombinationSum(int[] arrays, int target)
     {
@@ -166,8 +166,8 @@ public class Backtracking
     /// <summary>
     /// 组合个数
     /// </summary>
-    /// <param name="n"></param[1...n]的数组范围
-    /// <param name="k"></param>元素K个的组合
+    /// <param name="n">[1...n]的数组范围</param
+    /// <param name="k">元素K个的组合</param>
     /// <returns></returns>
     public IList<IList<int>> CombinationCount(int n, int k)
     {
@@ -200,8 +200,8 @@ public class Backtracking
     /// <summary>
     /// 若干个元素组合之和
     /// </summary>
-    /// <param name="k"></param>不重复个元素
-    /// <param name="kSum"></param>k个元素之和
+    /// <param name="k">不重复个元素</param>
+    /// <param name="kSum">k个元素之和</param>
     /// <returns></returns>
     public IList<IList<int>> CombinationSumK(int k, int kSum)
     {
